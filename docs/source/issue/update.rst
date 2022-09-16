@@ -22,6 +22,7 @@ Examples
 
   $ glab issue update 42 --label ui,ux
   $ glab issue update 42 --unlabel working
+  $ glab issue update 42 --assignee @me
   
 
 Options
@@ -29,7 +30,7 @@ Options
 
 ::
 
-  -a, --assignee strings     assign users via username, prefix with '!' or '-' to remove from existing assignees, '+' to add, otherwise replace existing assignees with given users
+  -a, --assignee strings     assign users via username, prefix with '!' or '-' to remove from existing assignees, '+' to add, otherwise replace existing assignees with given users, `@me` to assign to current user
   -c, --confidential         Make issue confidential
   -d, --description string   Issue description
   -l, --label strings        add labels
